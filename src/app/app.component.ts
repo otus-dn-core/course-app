@@ -9,7 +9,7 @@ import { AngularFirestore } from '@angular/fire/firestore';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit {
-  title = 'rostof-admin';
+  title = 'course-app';
 
   constructor(private afs: AngularFirestore) {
 
