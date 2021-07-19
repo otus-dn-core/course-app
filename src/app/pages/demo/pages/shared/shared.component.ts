@@ -7,9 +7,10 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
   styleUrls: ['./shared.component.scss']
 })
 export class SharedComponent implements OnInit {
-  form: FormGroup;
-
+  
   constructor(private fb: FormBuilder) { }
+
+  form!: FormGroup;
 
   ngOnInit(): void {
       this.form = this.fb.group({

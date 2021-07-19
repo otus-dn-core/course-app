@@ -7,6 +7,7 @@ import { SharedComponent } from './shared.component';
 
 import { ButtonsModule, ControlsModule } from '@app/shared';
 
+
 @NgModule({
   declarations: [
     SharedComponent
@@ -16,7 +17,8 @@ import { ButtonsModule, ControlsModule } from '@app/shared';
     SharedRoutingModule,
     ReactiveFormsModule,
     ButtonsModule,
-    CommonModule
+    CommonModule,
+    ControlsModule
   ]
 })
 export class SharedModule { }
