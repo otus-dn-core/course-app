@@ -1,0 +1,134 @@
+vm@vm-Z68X-UD3-B3:~/WWW/ANGULAR/Scalable-Web-Applications/course-app$ npm run start
+
+> course-app@0.0.0 start /home/vm/WWW/ANGULAR/Scalable-Web-Applications/course-app
+> ng serve
+
+✔ Browser application bundle generation complete.
+
+Initial Chunk Files                                 | Names         |      Size
+vendor.js                                           | vendor        |   4.18 MB
+polyfills.js                                        | polyfills     | 128.58 kB
+styles.css                                          | styles        |  74.00 kB
+main.js                                             | main          |  17.06 kB
+runtime.js                                          | runtime       |  12.18 kB
+
+                                                    | Initial Total |   4.40 MB
+
+Lazy Chunk Files                                    | Names         |      Size
+src_app_pages_demo_pages_shared_shared_module_ts.js | -             |   1.37 MB
+src_app_pages_demo_pages_styles_styles_module_ts.js | -             |  12.53 kB
+src_app_pages_demo_demo_module_ts.js                | -             |   7.81 kB
+
+Build at: 2021-07-20T19:24:13.690Z - Hash: 0b6b8092c6a0cb4faf01 - Time: 13161ms
+
+Warning: /home/vm/WWW/ANGULAR/Scalable-Web-Applications/course-app/node_modules/@angular/fire/__ivy_ngcc__/es2015/firebase.app.module.js depends on 'firebase/app'. CommonJS or AMD dependencies can cause optimization bailouts.
+For more info see: https://angular.io/guide/build#configuring-commonjs-dependencies
+
+Warning: /home/vm/WWW/ANGULAR/Scalable-Web-Applications/course-app/node_modules/firebase/firestore/dist/index.esm.js depends on '@firebase/firestore'. CommonJS or AMD dependencies can cause optimization bailouts.
+For more info see: https://angular.io/guide/build#configuring-commonjs-dependencies
+
+
+
+Error: src/app/shared/controls/date-range/date-range.component.html:2:11 - error NG8002: Can't bind to 'formGroup' since it isn't a known property of 'form'.
+
+2     <form [formGroup]="form" novalidate autocomplete="off">
+            ~~~~~~~~~~~~~~~~~~
+
+  src/app/shared/controls/date-range/date-range.component.ts:16:18
+    16     templateUrl: './date-range.component.html',
+                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Error occurs in the template of component DateRangeComponent.
+
+
+Error: src/app/shared/controls/date-range/date-range.component.html:4:13 - error NG8001: 'app-date' is not a known element:
+1. If 'app-date' is an Angular component, then verify that it is part of this module.
+2. If 'app-date' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.
+
+4             <app-date formControlName="from" (closed)="onClosed()" [placeholder]="placeholder?.from || 'From'"
+              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+5                 (changed)="onChanged()" [max]="max">
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  src/app/shared/controls/date-range/date-range.component.ts:16:18
+    16     templateUrl: './date-range.component.html',
+                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Error occurs in the template of component DateRangeComponent.
+
+
+Error: src/app/shared/controls/date-range/date-range.component.html:4:68 - error NG8002: Can't bind to 'placeholder' since it isn't a known property of 'app-date'.
+1. If 'app-date' is an Angular component and it has 'placeholder' input, then verify that it is part of this module.
+2. If 'app-date' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.
+3. To allow any property add 'NO_ERRORS_SCHEMA' to the '@NgModule.schemas' of this component.
+
+4             <app-date formControlName="from" (closed)="onClosed()" [placeholder]="placeholder?.from || 'From'"
+                                                                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  src/app/shared/controls/date-range/date-range.component.ts:16:18
+    16     templateUrl: './date-range.component.html',
+                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Error occurs in the template of component DateRangeComponent.
+
+
+Error: src/app/shared/controls/date-range/date-range.component.html:5:41 - error NG8002: Can't bind to 'max' since it isn't a known property of 'app-date'.
+1. If 'app-date' is an Angular component and it has 'max' input, then verify that it is part of this module.
+2. If 'app-date' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.
+3. To allow any property add 'NO_ERRORS_SCHEMA' to the '@NgModule.schemas' of this component.
+
+5                 (changed)="onChanged()" [max]="max">
+                                          ~~~~~~~~~~~
+
+  src/app/shared/controls/date-range/date-range.component.ts:16:18
+    16     templateUrl: './date-range.component.html',
+                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Error occurs in the template of component DateRangeComponent.
+
+
+Error: src/app/shared/controls/date-range/date-range.component.html:10:13 - error NG8001: 'app-date' is not a known element:
+1. If 'app-date' is an Angular component, then verify that it is part of this module.
+2. If 'app-date' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.
+
+10             <app-date formControlName="to" (closed)="onClosed()" [placeholder]="placeholder?.to || 'To'"
+               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+11                 (changed)="onChanged()" [min]="min"></app-date>
+   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  src/app/shared/controls/date-range/date-range.component.ts:16:18
+    16     templateUrl: './date-range.component.html',
+                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Error occurs in the template of component DateRangeComponent.
+
+
+Error: src/app/shared/controls/date-range/date-range.component.html:10:66 - error NG8002: Can't bind to 'placeholder' since it isn't a known property of 'app-date'.
+1. If 'app-date' is an Angular component and it has 'placeholder' input, then verify that it is part of this module.
+2. If 'app-date' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.
+3. To allow any property add 'NO_ERRORS_SCHEMA' to the '@NgModule.schemas' of this component.
+
+10             <app-date formControlName="to" (closed)="onClosed()" [placeholder]="placeholder?.to || 'To'"
+                                                                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  src/app/shared/controls/date-range/date-range.component.ts:16:18
+    16     templateUrl: './date-range.component.html',
+                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Error occurs in the template of component DateRangeComponent.
+
+
+Error: src/app/shared/controls/date-range/date-range.component.html:11:41 - error NG8002: Can't bind to 'min' since it isn't a known property of 'app-date'.
+1. If 'app-date' is an Angular component and it has 'min' input, then verify that it is part of this module.
+2. If 'app-date' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.
+3. To allow any property add 'NO_ERRORS_SCHEMA' to the '@NgModule.schemas' of this component.
+
+11                 (changed)="onChanged()" [min]="min"></app-date>
+                                           ~~~~~~~~~~~
+
+  src/app/shared/controls/date-range/date-range.component.ts:16:18
+    16     templateUrl: './date-range.component.html',
+                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Error occurs in the template of component DateRangeComponent.
+
+
+
+
+** Angular Live Development Server is listening on localhost:4200, open your browser on http://localhost:4200/ **
+
+^C
+vm@vm-Z68X-UD3-B3:~/WWW/ANGULAR/Scalable-Web-Applications/course-app$ 
