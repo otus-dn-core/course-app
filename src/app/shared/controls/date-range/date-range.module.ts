@@ -2,6 +2,8 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { DateRangeComponent } from './date-range.component';
 
+import { ReactiveFormsModule, FormGroup, FormBuilder } from '@angular/forms';
+
 
 
 @NgModule({
@@ -9,7 +11,10 @@ import { DateRangeComponent } from './date-range.component';
     DateRangeComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    ReactiveFormsModule,
+    FormGroup,
+    FormBuilder
   ],
   exports: [
     DateRangeComponent

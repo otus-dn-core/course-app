@@ -31,7 +31,7 @@ export class DateRangeComponent implements OnInit, ControlValueAccessor {
     form: FormGroup;
 
     constructor(private fb: FormBuilder) { }
-
+    
     ngOnInit(): void {
         this.form = this.fb.group({
             from: [null],
