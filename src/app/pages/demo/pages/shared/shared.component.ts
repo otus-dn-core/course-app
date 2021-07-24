@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
-import { regex, regexErrors } from '@app/shared';
+import { regex, regexErrors, markFormGroupTouched } from '@app/shared';
 
 import { ControlItem } from '@app/models/frontend';
 
@@ -75,7 +75,10 @@ export class SharedComponent implements OnInit {
 
   onSubmit(): void {
     console.log('Submit!');
-    
+
+    if (!this.form.valid) {
+      markFormGroupTouched(this.form);
+    }
   }
 
   onPatchValue(): void {
