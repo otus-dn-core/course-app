@@ -79,10 +79,30 @@ export class SharedComponent implements OnInit {
   }
 
   onPatchValue(): void {
-      this.form.patchValue({input: 'test'});
+    this.form.patchValue({
+        input: 123,
+        password: 'qwerty',
+        autocomplete: 1,
+        select: 2,
+        checkboxes: [3],
+        radios: 4,
+        date: new Date().getTime(),
+        // dateRange: {
+        //     from: new Date(2019, 5, 10).getTime(),
+        //     to: new Date(2019, 5, 25).getTime()
+        // }
+    });
   }
 
   onToggleInline() {
     this.isInline = !this.isInline;
+  }
+
+  onToggleDisable(): void {
+    if (this.form.enabled) {
+        this.form.disable();
+    } else {
+        this.form.enable();
+    }
   }
 }
